@@ -16,6 +16,7 @@ let availableAirplanes = [
     
      }
     ];
+    
 let flightRequirements = {
       requiredStaff: 4,
       requiredSpeedRange: 700

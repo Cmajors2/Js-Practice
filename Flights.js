@@ -1,8 +1,8 @@
 
-import * as flights from './Main2.0.js';
+import * as flights from './Flights2.0.js';
 
 function displayFuelCapacity() {
-    flights.aircrafts.forEach(function(element) {
+    flights.aircrafts.forEach((element) => {
         console.log(`Fuel Capacity of ${element.name}: ${element.fuelCapacity}`);
     })
 };
@@ -22,4 +22,4 @@ function displaySpeedRangeStatus() {
 
 displaySpeedRangeStatus();
 
-console.log(flights);
+console.log(fights.flightReqs);

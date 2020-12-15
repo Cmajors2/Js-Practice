@@ -29,7 +29,7 @@ reverseWord(word) {
 reverseAllWords(sentence) {
     let words = sentence.split(" ");
       for (let i = 0; i < words.length; i++) {
-        words[i] = messageMixer.reverseWord(words[i]);
+        words[i] = this.reverseWord(words[i]);
       }
         return words.join(" ");
   },
@@ -47,11 +47,23 @@ replaceAllOccurrences(string, toBeReplaced, replaceWith) {
 encode(string) {
     let replacementObject = { "a": "@", "s": "$", "i": "!", "o":"0" };
       for (let key in replacementObject) {
-        string = replaceAllOccurrences(string, key, replacementObject[key]); 
+        string = this.replaceAllOccurrences(string, key, replacementObject[key]); 
       }	
       return string;
-  }
+  },
+
+palindrome(string) {
+    return string + " " + this.reverseAllWords(string);
+},
+
+piglatin(string, char) {
+  return string.split(' ').join(char + ' ');
+}
 
 };
   
-export default messageMixer;
+export {messageMixer};
+
+
+
+
