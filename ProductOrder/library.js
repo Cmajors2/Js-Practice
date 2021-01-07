@@ -29,7 +29,7 @@ item here is an order item. All the order items are arrays with 2 elements: (1) 
 
 const checkInventory = (order) => {
   return new Promise ((resolve, reject) => {
-   setTimeout(()=> {  
+   setTimeout(() => {  
    const itemsArr = order.items;  
    let inStock = itemsArr.every(item => store[item[0]].inventory >= item[1]);
    
