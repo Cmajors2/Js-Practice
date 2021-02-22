@@ -23,23 +23,7 @@ async function withAsync(num){
  }
 }
 
-withAsync(0)
+withAsync(1000)
 .then((resolveValue) => {
- console.log('with ');
-}
-
-
-
-
-
-
-
-
-
-// Leave this commented out until step 3:
-/*
-withAsync(100)
-  .then((resolveValue) => {
-  console.log(` withAsync(100) returned a promise which resolved to: ${resolveValue}.`);
-})
-*/
+ console.log(`withAsync(100) returned a promise which resolved to: ${resolveValue}.`);
+});

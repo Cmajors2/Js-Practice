@@ -1,6 +1,6 @@
 
 
-import { checkAvailability } from './Main2.js';
+import { checkAvailability } from './Promise2.js';
 
 const onFulfill = (itemsArray) => {
   console.log(`Items checked: ${itemsArray}`);
